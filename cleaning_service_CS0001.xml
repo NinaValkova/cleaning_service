@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service SYSTEM "cleaning_service.dtd">
+<service id="CS0001" regionRef="VN" typeRef="regular">
+    <name>Редовно почистване</name>
+    <firm_name>Clean Home Service</firm_name>
+    <address>
+        <city>Варна</city>
+        <street>улица „Преслав”</street>
+    </address>
+    <phone>+359 889 123456</phone>
+    <email>info@cleanhome.bg</email>
+    <site>www.cleanhome.bg</site>
+    <description>Професионално почистване за поддържане на хигиенична жилищна среда.</description>
+    <price unit="sq.m">
+        <season>
+            <winter>3.80</winter>
+            <spring>4.20</spring>
+            <autumn>4.40</autumn>
+            <summer>4.80</summer>
+        </season>
+    </price>
+    <type_of_cleaning machines_usage="no">
+        <machines_description>N/A</machines_description>
+    </type_of_cleaning>
+    <date>
+        <day>25</day>
+        <month>03</month>
+        <quarter>1</quarter>
+        <year>2025</year>
+    </date>
+</service>

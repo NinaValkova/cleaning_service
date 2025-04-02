@@ -1,0 +1,6 @@
+<!ELEMENT services (service+)>
+
+<!ELEMENT service (name)>
+<!ATTLIST service id ID #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>

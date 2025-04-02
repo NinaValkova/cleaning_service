@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service SYSTEM "cleaning_service.dtd">
+<service id="CS0002" regionRef="SF" typeRef="general">
+    <name>Детайлно основно почистване</name>
+    <firm_name>Fresh Clean Service</firm_name>
+    <address>
+        <city>София</city>
+        <street>ул. "Чавдар Мутафов"</street>
+    </address>
+    <phone>+359 888 654321</phone>
+    <email>contact@freshclean.bg</email>
+    <site>www.freshclean.bg</site>
+    <description>Цялостно основно почистване със специализирани машини за подобрена ефективност и резултати.</description>
+    <price unit="sq.m">
+        <season>
+            <winter>5.50</winter>
+            <spring>6.00</spring>
+            <autumn>5.80</autumn>
+            <summer>6.20</summer>
+        </season>
+    </price>
+    <type_of_cleaning machines_usage="yes">
+        <machines_description>
+            <machine>
+                <machine_name>Прахосмукачка</machine_name>
+                <model>Kärcher NT 65/2</model>
+                <specifications>
+                    <power>2760 W</power>
+                    <capacity>65 L</capacity>
+                </specifications>
+                <image>images/karcher_nt65.jpg</image>
+            </machine>
+            <machine>
+                <machine_name>Скрубер за под</machine_name>
+                <model>Nilfisk SC351</model>
+                <specifications>
+                    <power>450 W</power>
+                    <capacity>11 L</capacity>
+                </specifications>
+                <image>images/nilfisk_sc351.jpg</image>
+            </machine>
+        </machines_description>
+    </type_of_cleaning>
+    <date>
+        <day>30</day>
+        <month>03</month>
+        <quarter>1</quarter>
+        <year>2025</year>
+    </date>
+</service>

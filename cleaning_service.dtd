@@ -1,0 +1,55 @@
+<!ELEMENT service (name, firm_name, address, phone, email, site, description, price, type_of_cleaning, date)>
+<!ATTLIST service 
+          id         ID      #REQUIRED
+          regionRef  IDREF   #REQUIRED
+          typeRef    IDREF   #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT firm_name (#PCDATA)>
+<!ELEMENT address (city, street)>
+    <!ELEMENT city (#PCDATA)>
+    <!ELEMENT street (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT site (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT price (season)>
+<!ATTLIST price unit CDATA #REQUIRED>
+
+<!ELEMENT season (winter, spring, autumn, summer)>
+    <!ELEMENT winter (#PCDATA)>
+    <!ELEMENT spring (#PCDATA)>
+    <!ELEMENT autumn (#PCDATA)>
+    <!ELEMENT summer (#PCDATA)>
+
+<!ELEMENT type_of_cleaning (machines_description)>
+<!ATTLIST type_of_cleaning machines_usage (yes|no) #REQUIRED>
+
+<!ELEMENT machines_description (#PCDATA | machine)*>
+    <!ELEMENT machine (machine_name, model, specifications, image)>
+        <!ELEMENT machine_name (#PCDATA)>
+        <!ELEMENT model (#PCDATA)>
+        <!ELEMENT specifications (power, capacity, international_name)>
+            <!ELEMENT power (#PCDATA)>
+            <!ELEMENT capacity (#PCDATA)>
+            <!ELEMENT international_name (#PCDATA)>
+        <!ELEMENT image (#PCDATA)>
+
+<!ELEMENT date (day, month, quarter, year)>
+    <!ELEMENT day (#PCDATA)>
+    <!ELEMENT month (#PCDATA)>
+    <!ELEMENT quarter (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+
+<!ELEMENT regions (region+)>
+<!ELEMENT region (region_name)>
+<!ATTLIST region 
+          id         ID      #REQUIRED
+          serviceRef IDREFS  #IMPLIED>
+<!ELEMENT region_name (#PCDATA)>
+
+<!ELEMENT service_types (type+)>
+<!ELEMENT type (#PCDATA)>
+<!ATTLIST type 
+          id ID #REQUIRED>

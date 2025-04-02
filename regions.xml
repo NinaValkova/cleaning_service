@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regions>
+    <region id="VN" serviceRef="CS0001">
+        <region_name>Варна</region_name>
+    </region>
+    <region id="SF" serviceRef="CS0002">
+        <region_name>София</region_name>
+    </region>
+    <region id="PD" serviceRef="CS0003">
+        <region_name>Пловдив</region_name>
+    </region>
+    <region id="BS" serviceRef="CS0004">
+        <region_name>Бургас</region_name>
+    </region>
+</regions>

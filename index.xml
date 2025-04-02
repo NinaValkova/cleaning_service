@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE services SYSTEM "index.dtd">
+<services>
+    <service id="CS0001">
+        <name>Редовно почистване</name>
+    </service>
+    <service id="CS0002">
+        <name>Детайлно основно почистване</name>
+    </service>
+</services>
